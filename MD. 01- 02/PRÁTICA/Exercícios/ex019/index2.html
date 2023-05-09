@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt - br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 19.2</title>
+    <style>
+        body{
+            font: nrmal 1em arial, helvetica, sans-serif;
+        }
+        a{
+            font-weight: bold;
+            text-decoration: none;
+            color: red;
+        }
+        a:visited{
+            color: blue;
+        }
+        a:hover{
+            color: crimson;
+        }
+        .especial:hover{
+            color: white;
+            background-color: black;
+            text-decoration: none;
+        }
+        .especial::before{
+            content: '>>';
+            font-weight: lighter;
+        }
+        .especial::after{
+            content: '<<';
+            font-weight: lighter;
+        }
+    </style>
+</head>
+<body>
+ <h1>Personalizando um link</h1>
+ <p>
+    Para aprender HTML5 e CSS3 , acesse o
+    <a href="https://youtu.be/Ejkb_YpuHWs">
+        A playlist d curso HTML5 e CSS3 - Módulo 01
+    </a>
+ </p>   
+ <p>
+    Se quiser conferir o material desse módulo.
+    <a href="https://github.com/gustavoguanabara/html-css">
+        Github do Guanabara
+    </a>
+ </p>
+ <p> Para conhecer os padrões , visite  site do 
+    <a href="https://www.w3c.br/Padroes/" class="especial"> W3C Escritório do W3C no Brasil</a>
+ </p>
+
+</body>
+</html>
